@@ -17,6 +17,9 @@ class informacion(models.Model):
     volumen = fields.Float(compute="_volumen", store=True)
     peso = fields.Float(string="Peso", default=2.7, digits=(6, 2))
     densidad = fields.Float(compute="_densidad", store=True)
+    foto = fields.Binary(string='Foto')
+    adjunto_nombre = fields.Char(string='Nombre adjunto')
+    adjunto = fields.Binary(string='Archivo adjunto')
 
     @api.depends('alto_cm', 'largo_cm', 'ancho_cm')
     def _volumen(self):
