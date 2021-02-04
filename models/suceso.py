@@ -3,7 +3,7 @@ from odoo import models, fields, api
 
 
 class suceso(models.Model):
-    _name = 'odoo_basico.suceso'  # será el nombre de la tabla (nombre modulo, nombre tabla)
+    _name = 'odoo_basico_celia.suceso'  # será el nombre de la tabla (nombre modulo, nombre tabla)
     _description = 'Prueba vista tree en modo edición'
 
     name = fields.Char(string="Suceso", required=True, size=20)  # unico campo obligatorio que se tiene que llamar asi

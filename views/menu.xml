@@ -1,10 +1,12 @@
 <odoo>
     <data>
-        <menuitem id="main_odoo_basico" name="Menú Nivel 0. Básico"/>
-        <menuitem id="menu_informacion" name="Menú Nivel 1. Informacion" parent="main_odoo_basico"
+        <menuitem id="main_odoo_basico_celia" name="Menú Nivel 0. Básico Celia"/>
+        <menuitem id="menu_informacion" name="Menú Nivel 1. Informacion" parent="main_odoo_basico_celia"
                   action="informacion_list_action"/>
-        <menuitem id="menu_suceso" name="Menú Nivel 1. Suceso" parent="main_odoo_basico"
+        <menuitem id="menu_suceso" name="Menú Nivel 1. Suceso" parent="main_odoo_basico_celia"
                   action="suceso_list_action"/>
+        <menuitem id="menu_pedido" name="Menú Nivel 2. Pedidos" parent="main_odoo_basico_celia"
+                  action="pedido_list_action"/>
 
     </data>
 </odoo>

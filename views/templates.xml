@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 1">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 1">
             <field name="name">Rexistro 1</field>
             <field name="descripcion">Descripción Rexistro 1</field>
             <field name="autorizado">True</field>
@@ -10,7 +10,7 @@
             <field name="ancho_cm">1</field>
             <field name="peso">1</field>
         </record>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 2">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 2">
             <field name="name">Rexistro 2</field>
             <field name="descripcion">Descripción Rexistro 2</field>
             <field name="autorizado">True</field>
@@ -20,7 +20,7 @@
             <field name="ancho_cm">2</field>
             <field name="peso">2</field>
         </record>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 3">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 3">
             <field name="name">Rexistro 3</field>
             <field name="descripcion">Descripción Rexistro 3</field>
             <field name="autorizado">True</field>
@@ -30,7 +30,7 @@
             <field name="ancho_cm">3</field>
             <field name="peso">3</field>
         </record>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 4">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 4">
             <field name="name">Rexistro 4</field>
             <field name="descripcion">Descripción Rexistro 4</field>
             <field name="autorizado">True</field>
@@ -40,7 +40,7 @@
             <field name="ancho_cm">4</field>
             <field name="peso">4</field>
         </record>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 5">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 5">
             <field name="name">Rexistro 5</field>
             <field name="descripcion">Descripción Rexistro 5</field>
             <field name="autorizado">False</field>
@@ -50,7 +50,7 @@
             <field name="ancho_cm">5</field>
             <field name="peso">5</field>
         </record>
-        <record model="odoo_basico.informacion" id="odoo_basico informacion 6">
+        <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 6">
             <field name="name">Rexistro 6</field>
             <field name="descripcion">Descripción Rexistro 6</field>
             <field name="autorizado">False</field>
@@ -63,7 +63,7 @@
 
         <record model="ir.filters" id="filtro 1 ">
             <field name="name">Filtro informacion 1</field>
-            <field name="model_id">odoo_basico.informacion</field>
+            <field name="model_id">odoo_basico_celia.informacion</field>
             <field name="context">{'group_by': ['autorizado']}</field>
             <field name="is_default">true</field>
             <field name="active">true</field>
@@ -74,12 +74,12 @@
             <!--
              En blanco para que esté dispoñible para todos os usuarios
             -->
-            <field name="action_id" eval="ref('odoo_basico.informacion_list_action')"/>
+            <field name="action_id" eval="ref('odoo_basico_celia.informacion_list_action')"/>
             <!-- Obtemos o id a partir do id externo-->
         </record>
         <record model="ir.ui.view" id="informacion_search_view">
             <field name="name">informacion.search</field>
-            <field name="model">odoo_basico.informacion</field>
+            <field name="model">odoo_basico_celia.informacion</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="name"/>
@@ -90,7 +90,7 @@
         </record>
         <record model="ir.filters" id="filtro 1 ">
             <field name="name">Filtro informacion 1</field>
-            <field name="model_id">odoo_basico.informacion</field>
+            <field name="model_id">odoo_basico_celia.informacion</field>
             <field name="context">{'group_by': ['autorizado']}</field>
             <field name="is_default">true</field>
             <field name="active">true</field>
@@ -101,12 +101,12 @@
             <!--
              En blanco para que esté dispoñible para todos os usuarios
             -->
-            <field name="action_id" eval="ref('odoo_basico.informacion_list_action')"/>
+            <field name="action_id" eval="ref('odoo_basico_celia.informacion_list_action')"/>
             <!-- Obtemos o id a partir do id externo-->
         </record>
         <record model="ir.filters" id="filtro 2 ">
             <field name="name">Filtro informacion 2</field>
-            <field name="model_id">odoo_basico.informacion</field>
+            <field name="model_id">odoo_basico_celia.informacion</field>
             <field name="context">{'group_by': ['autorizado']}</field>
             <field name="is_default">false</field>
             <field name="active">true</field>
@@ -119,7 +119,7 @@
             <!--
              En blanco para que esté dispoñible para todos os usuarios
             -->
-            <field name="action_id" eval="ref('odoo_basico.informacion_list_action')"/>
+            <field name="action_id" eval="ref('odoo_basico_celia.informacion_list_action')"/>
             <!-- Obtemos o id a partir do id externo-->
         </record>
     </data>

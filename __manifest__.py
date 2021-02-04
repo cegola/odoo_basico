@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "odoo_basico",
+    'name': "odoo_basico_celia",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -24,8 +24,12 @@
 
     # always loaded
     'data': [
+        #'reports/report_header.xml',
+        #'reports/report_informacion.xml',
         'views/informacion.xml',
         'views/suceso.xml',
+        'views/pedido.xml',
+        'views/lineapedido.xml',
         'views/templates.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',

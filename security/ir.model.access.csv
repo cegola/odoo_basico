@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-odoo_basico_informacion,odoo_basico.informacion,model_odoo_basico_informacion,base.group_user,1,1,1,1
-odoo_basico_suceso,odoo_basico.suceso,model_odoo_basico_suceso,base.group_user,1,1,1,1
+odoo_basico_celia_informacion,odoo_basico_celia.informacion,model_odoo_basico_celia_informacion,base.group_user,1,1,1,1
+odoo_basico_celia_suceso,odoo_basico_celia.suceso,model_odoo_basico_celia_suceso,base.group_user,1,1,1,1
+odoo_basico_celia_pedido,odoo_basico_celia.pedido,model_odoo_basico_celia_pedido,base.group_user,1,1,1,1
+odoo_basico_celia_lineapedido,odoo_basico_celia.lineapedido,model_odoo_basico_celia_lineapedido,base.group_user,1,1,1,1
