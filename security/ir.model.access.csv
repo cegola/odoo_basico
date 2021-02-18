@@ -3,3 +3,4 @@ odoo_basico_celia_informacion,odoo_basico_celia.informacion,model_odoo_basico_ce
 odoo_basico_celia_suceso,odoo_basico_celia.suceso,model_odoo_basico_celia_suceso,base.group_user,1,1,1,1
 odoo_basico_celia_pedido,odoo_basico_celia.pedido,model_odoo_basico_celia_pedido,base.group_user,1,1,1,1
 odoo_basico_celia_lineapedido,odoo_basico_celia.lineapedido,model_odoo_basico_celia_lineapedido,base.group_user,1,1,1,1
+odoo_basico_celia_res_partner,odoo_basico_celia.res_partner,model_res_partner,base.group_user,1,1,1,1

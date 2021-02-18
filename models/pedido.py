@@ -10,6 +10,7 @@ class pedido(models.Model):
     name = fields.Char(string="Identificador", required=True, size=20)  # unico campo obligatorio que se tiene que llamar asi
     # Os campos One2many Non se almacenan na BD
     lineapedido_ids = fields.One2many("odoo_basico_celia.lineapedido", 'pedido_id')
+    persoa_id = fields.Many2one('res.partner', ondelete='set null', domain="[('visible','=','True')]", index=True, string="Persoa")
 
     def actualizadorSexo(self):
         informacion_ids = self.env['odoo_basico_celia.informacion'].search([('autorizado', '=', False)])

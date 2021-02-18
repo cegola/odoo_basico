@@ -48,7 +48,7 @@
             <field name="alto_cm">5</field>
             <field name="largo_cm">5</field>
             <field name="ancho_cm">5</field>
-            <field name="peso">5</field>
+            <field name="peso">4</field>
         </record>
         <record model="odoo_basico_celia.informacion" id="odoo_basico_celia informacion 6">
             <field name="name">Rexistro 6</field>
@@ -58,7 +58,18 @@
             <field name="alto_cm">6</field>
             <field name="largo_cm">6</field>
             <field name="ancho_cm">6</field>
-            <field name="peso">6</field>
+            <field name="peso">4</field>
+        </record>
+
+         <record model="res.partner" id="partner persoa">
+            <field name="name">Nome Persoa</field>
+            <field name="apelidos">Apelidos Persoa</field>
+            <field name="visible">true</field>
+            <field name="display_name">Nome Persoa Apelidos Persoa</field>
+            <field name="email">persoa@iesteis.com</field>
+            <field name="active">true</field>
+            <field name="company_id">1</field>
+            <field name="lang">es_ES</field>
         </record>
 
         <record model="ir.filters" id="filtro 1 ">
