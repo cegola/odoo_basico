@@ -83,7 +83,7 @@ class informacion(models.Model):
                 'Contexto: %s' % rexistro.env.context)  # env.context é un diccionario  https://www.w3schools.com/python/python_dictionaries.asp
         return True
 
-    @api.depends('data_hora')
+    @api.depends('data')
     def _mes_castelan(self):
         # O idioma por defecto é o configurado en locale na máquina onde se executa odoo.
         # Podemos cambialo con locale.setlocale, os idiomas teñen que estar instalados na máquina onde se executa odoo.
@@ -91,9 +91,9 @@ class informacion(models.Model):
         locale.setlocale(locale.LC_TIME, 'es_ES.utf8')  # Para GNU/Linux
         # locale.setlocale(locale.LC_TIME, 'Spanish_Spain.1252')  # Para Windows
         for rexistro in self:
-            rexistro.mes_castelan = rexistro.data_hora.strftime("%B")  # strftime https://strftime.org/
+            rexistro.mes_castelan = rexistro.data.strftime("%B")  # strftime https://strftime.org/
 
-    @api.depends('data_hora')
+    @api.depends('data')
     def _mes_galego(self):
         # O idioma por defecto é o configurado en locale na máquina onde se executa odoo.
         # Podemos cambialo con locale.setlocale, os idiomas teñen que estar instalados na máquina onde se executa odoo.
@@ -101,7 +101,7 @@ class informacion(models.Model):
         locale.setlocale(locale.LC_TIME, 'gl_ES.utf8')  # Para GNU/Linux
         # locale.setlocale(locale.LC_TIME, 'Galician_Spain.1252')  # Para Windows
         for rexistro in self:
-            rexistro.mes_galego = rexistro.data_hora.strftime("%B")
+            rexistro.mes_galego = rexistro.data.strftime("%B")
         locale.setlocale(locale.LC_TIME, 'es_ES.utf8')  # Para GNU/Linux
         # locale.setlocale(locale.LC_TIME, 'Spanish_Spain.1252')  # Para Windows
 
