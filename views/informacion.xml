@@ -78,6 +78,7 @@
                             </page>
                             <page string="Datos numericos">
                                 <group>
+                                    <field name="literal" readonly="1"/>
                                     <field name="alto_cm"/>
                                     <field name="largo_cm"/>
                                     <field name="ancho_cm"/>

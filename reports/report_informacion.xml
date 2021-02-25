@@ -37,7 +37,7 @@
                                     <th class="text-left">Titulo(name)</th>
                                     <th class="text-left">Peso</th>
                                     <th class="text-left">Autorizado</th>
-<!--                                    <th class="text-left">Datas</th>-->
+                                    <th class="text-left">Datas</th>
                                     <th class="text-left">Sexo</th>
                                 </tr>
                             </thead>
@@ -62,11 +62,11 @@
                                                 <span >NON</span>
                                             </t>
                                         </td>
-<!--                                        <td class="text-left">-->
-<!--                                            <span t-field="o.data" t-options="{'widget': 'date'}"/>-->
-<!--                                            <span>-</span>-->
-<!--                                            <span t-field="o.data_hora" t-options="{'widget': 'datetime'}"/> &lt;!&ndash;configurar en axustes o usuario coa zona horaria &ndash;&gt;-->
-<!--                                        </td>-->
+                                        <td class="text-left">
+                                            <span t-field="o.data" t-options="{'widget': 'date'}"/>
+                                            <span>-</span>
+                                            <span t-field="o.data_hora" t-options="{'widget': 'datetime'}"/> <!--configurar en axustes o usuario coa zona horaria -->
+                                        </td>
                                         <td class="text-left">
                                             <span t-field="o.sexo_traducido" />
                                         </td>
@@ -75,7 +75,7 @@
                                 <tr>
                                     <td class="text-left"><span>Total Pesos: </span></td>
                                     <td class="text-left"><span t-esc="sum([x.peso for x in docs])"/> </td>
-<!--                                    <td class="text-left"> </td>-->
+                                    <td class="text-left"> </td>
                                     <td class="text-left"><span>Suma de pesos maior a 3 </span></td>
                                     <td class="text-left"><span t-esc="suma_peso"/></td>
                                 </tr>

@@ -18,6 +18,7 @@ class informacion(models.Model):
     autorizado = fields.Boolean(string="¿Está autorizado?", default=True)
     sexo_traducido = fields.Selection([('Hombre', 'Home'), ('Mujer', 'Muller'), ('Otros', 'Outros')], string="Género")
     alto_cm = fields.Integer(string="Altura en cm")
+    literal = fields.Char(store=False)
     largo_cm = fields.Integer(string="Largo en cm")
     ancho_cm = fields.Integer(string="Ancho en cm")
     volumen = fields.Float(compute="_volumen", store=True)
@@ -46,6 +47,14 @@ class informacion(models.Model):
 
     mes_castelan = fields.Char(compute="_mes_castelan", size=15, string="Mes castelan", store="True")
     mes_galego = fields.Char(compute="_mes_galego", size=15, string="Mes galego", store="True")
+
+    @api.onchange('alto_cm')
+    def _avisoAlto(self):
+        for rexistro in self:
+            if rexistro.alto_cm > 7:
+                rexistro.literal = 'O alto ten un valor posiblemente excesivo %s é maior que 7' % rexistro.alto_cm
+            else:
+                rexistro.literal = ""
 
     @api.constrains('peso')  # Ao usar ValidationError temos que importar a libreria ValidationError
     def _constrain_peso(self):  # from odoo.exceptions import ValidationError
